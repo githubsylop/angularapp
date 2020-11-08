@@ -26,6 +26,9 @@ export class DataSource {
         return this.selectProducts(this._products, sortProp, category);
     }
 
+    logData ():void {
+        console.log(this._products.values());
+    }
     protected getData(): void {
         this._products = [];
         this._categories.clear();            
