@@ -49,7 +49,6 @@ export class DataSource {
     }
 
     storeOrder(): Observable<number> {
-        console.log("ads");
         return this.impl.storeOrder(this.order);
     }
 }
